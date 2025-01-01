@@ -1,39 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Welcome to my website</title>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Insertion Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=3">
+    <title>Informative Website</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
         }
-        img {
-            margin: 20px;
-            max-width: 90%;
-            height: auto;
-            border: 2px solid #ccc;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        header {
+            background-color: #0078D7;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #005EA6;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 1rem;
+            font-size: 1.1rem;
+        }
+        nav a:hover {
+            background-color: #002080;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 2rem auto;
+            background: white;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .image-section {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .image-section img {
+            width: 100%;
+            max-width: 100px;
+            border-radius: 8px;
+        }
+        .documents {
+            margin-top: 2rem;
+        }
+        .documents a {
+            display: block;
+            margin: 0.5rem 0;
+            color: #0078D7;
+            text-decoration: none;
+        }
+        .documents a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #0078D7;
+            color: white;
+            margin-top: 2rem;
         }
     </style>
 </head>
 <body>
-    <div class="wrapper">
-      <h1>Kwasi Appiah Takyi-(MSc. Applied Mathematics).</h1>
-      <img src="images/pp.jpg.jpg" alt="...">
+    <header>
+        <h1>Welcome to my new developing website</h1>
+        <p>Your source for information, images, and documents about me.</p>
+    </header>
+    <nav>
+        <a href="#info">Information</a>
+        <a href="#images">Images</a>
+        <a href="#documents">Documents</a>
+    </nav>
+    <div class="container">
+        <section id="info">
+            <h2>Information</h2>
+            <p>Images and documentation are very crucial materials for memory.</p>
+            <p>Some give us joy and happiness, especially about the people we love. Others too remember us of our lost ones.</p>
+            <p>To me it is all happiness, laughter, and blessings.</p>
+        </section>
+
+        <section id="images" class="image-section">
+            <h2>Images</h2>
+            <img src="images\IMG_20231226_112347.jpg" alt="Placeholder Image 1">
+            <img src="images\IMG_20231226_182142.jpg" alt="Placeholder Image 2">
+            <img src="images\IMG_20231227_090557.jpg" alt="Placeholder Image 3">
+            <img src="images\IMG_20231227_090618.jpg" alt="Placeholder Image 4">
+            <img src="images\IMG_20231227_155837.jpg" alt="Placeholder Image 5">
+            <img src="images\IMG_20231227_155837.jpg" alt="Placeholder Image 6">
+        </section>
+
+        <section>
+             <h1>Kwasi Appiah Takyi-(MSc. Applied Mathematics).</h1>
       <p>Mr. Kwasi Appiah Takyi was born in Huni Valley, a town in the western part of Ghana. He completed his basic education in April 2008 at Nana Amoakwah Model School, situated at Damang in the western part of Ghana. He then continued his high school education at Ghana Secondary Technical School (GSTS) in Takoradi as a General Science student from September 2008 to May 2012.
-        After, he stayed home for a year, preparing himself for the university. During this period, he developed the interest in helping both basic and high school students having challenges in mathematics. Looking at the successes coming from his students, he made a choice to pursue his studies in mathematics at the university.
-        He saw it as a dream come true when he was finally admitted, starting his first degree in mathematics at the University of Energy and Natural Resources (UENR) in Bono Region, Ghana, from 2013 to 2017.
+        After, he stayed home for a year, preparing himself for the university. During this period, he developed an interest in helping both basic and high school students having challenges in mathematics. Looking at the successes coming from his students, he made a choice to pursue his studies in mathematics at the university.
+        When he was finally admitted, he saw it as a dream come true. From 2013 to 2017, he started his first degree in mathematics at the University of Energy and Natural Resources (UENR) in Bono Region, Ghana.
         Due to his hard-working and enthusiastic attitude, he was given an appointment to serve as a teaching assistant under the National Service Secretariat for a year at UENR, Department of Mathematics and Statistics. With the dream that he would feather his education, he ventured into the teaching field for about 5 years after his one-year national service.
-        He got married in the year 2021. And in 2022, he won a scholarship from the Government of the Republic of Serbia to pursue his master’s degree at the University of Belgrade, Faculty of Mathematics. His desires have always been to use the knowledge gained in previous and current studies to solve some of the problems the world is facing now due to high population growth and wishes to specialize as a Data Scientist in future. He intends to go back to Ghana after his studies.
-        
-        </p>
+        He got married in 2021. In 2022, he won a scholarship from the Government of the Republic of Serbia to pursue his master’s degree at the University of Belgrade, Faculty of Mathematics. His desire has always been to use the knowledge gained in previous and current studies to solve some of the problems the world is facing now due to high population growth. He wishes to specialize as a Data Scientist in the future. He intends to go back to Ghana after his studies.
+        <section>
+
+            
+        <section id="documents" class="documents">
+            <h2>Documents</h2>
+            <a href="#" target="_blank">Read Document 1</a>
+            <a href="#" download="Document2.pdf">Download Document 2</a>
+            <a href="#" download="Document3.pdf">Download Document 3</a>
+        </section>
     </div>
+    <title>Read Document</title>
+</head>
+<body>
+  <h1>Document Viewer</h1>
+  <script src="Bio.docx"> </script>
+    <footer>
+        <p>&copy; 2025 Your Company. All rights reserved.</p>
+    </footer>
 </body>
 </html>
