@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=3">
+    <title>Informative Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #0078D7;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #005EA6;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 1rem;
+            font-size: 1.1rem;
+        }
+        nav a:hover {
+            background-color: #002080;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 2rem auto;
+            background: white;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .image-section {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .image-section img {
+            width: 100%;
+            max-width: 100px;
+            border-radius: 8px;
+        }
+        .documents {
+            margin-top: 2rem;
+        }
+        .documents a {
+            display: block;
+            margin: 0.5rem 0;
+            color: #0078D7;
+            text-decoration: none;
+        }
+        .documents a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #0078D7;
+            color: white;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to my new developing website</h1>
+        <p>Your source for information, images, and documents about me.</p>
+    </header>
+    <nav>
+        <a href="#info">Information</a>
+        <a href="#images">Images</a>
+        <a href="#documents">Documents</a>
+    </nav>
+    <div class="container">
+        <section id="info">
+            <h2>Information</h2>
+            <p>Images and documentations are very crutial materials for memory.</p>
+            <p>Some gives us joy and happiness, especially about the people we love. Others too remember us of our lost ones.</p>
+            <p>To me it is all happiness, laughter and blessings.</p>
+        </section>
+
+        <section id="images" class="image-section">
+            <h2>Images</h2>
+            <img src="images\IMG_20231226_112347.jpg" alt="Placeholder Image 1">
+            <img src="images\IMG_20231226_182142.jpg" alt="Placeholder Image 2">
+            <img src="images\IMG_20231227_090557.jpg" alt="Placeholder Image 3">
+            <img src="images\IMG_20231227_090618.jpg" alt="Placeholder Image 4">
+            <img src="images\IMG_20231227_155837.jpg" alt="Placeholder Image 5">
+            <img src="images\IMG_20231227_155837.jpg" alt="Placeholder Image 6">
+        </section>
+
+        <section id="documents" class="documents">
+            <h2>Documents</h2>
+            <a href="#" target="_blank">Read Document 1</a>
+            <a href="#" download="Document2.pdf">Download Document 2</a>
+            <a href="#" download="Document3.pdf">Download Document 3</a>
+        </section>
+    </div>
+    <title>Read Document</title>
+</head>
+<body>
+  <h1>Document Viewer</h1>
+  <script src="Bio.docx"> </script>
+    <footer>
+        <p>&copy; 2025 Your Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>
