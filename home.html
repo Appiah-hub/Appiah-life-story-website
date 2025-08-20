@@ -46,8 +46,36 @@
         }
         .image-section img {
             width: 100%;
-            max-width: 100px;
+            max-width: 150px;
             border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .image-section img:hover {
+            transform: scale(1.05);
+        }
+        /* Lightbox styling */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            padding-top: 50px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.9);
+        }
+        .lightbox img {
+            display: block;
+            margin: auto;
+            max-width: 80%;
+            max-height: 80%;
+            border-radius: 10px;
+        }
+        .lightbox:target {
+            display: block;
         }
         .documents {
             margin-top: 2rem;
@@ -90,28 +118,40 @@
 
         <section id="images" class="image-section">
             <h2>Images</h2>
-            <img src="IMG_20231226_112347.jpg" alt="Placeholder Image 1">
-            <img src="IMG_20231226_182142.jpg" alt="Placeholder Image 2">
-            <img src="IMG_20231227_090557.jpg" alt="Placeholder Image 3">
-            <img src="IMG_20231227_090618.jpg" alt="Placeholder Image 4">
-            <img src="IMG_20231227_155837.jpg" alt="Placeholder Image 5">
-            <img src="IMG_20231227_155837.jpg" alt="Placeholder Image 6">
+            <!-- Images linked to lightbox -->
+            <a href="#img1"><img src="IMG_20231226_112347.jpg" alt="Image 1"></a>
+            <a href="#img2"><img src="IMG_20231226_182142.jpg" alt="Image 2"></a>
+            <a href="#img3"><img src="IMG_20231227_090557.jpg" alt="Image 3"></a>
+            <a href="#img4"><img src="IMG_20231227_090618.jpg" alt="Image 4"></a>
+            <a href="#img5"><img src="IMG_20231227_155837.jpg" alt="Image 5"></a>
+            <a href="#img6"><img src="IMG_20231227_155837.jpg" alt="Image 6"></a>
         </section>
+
+        <!-- Lightbox images -->
+        <div id="img1" class="lightbox"><a href="#"><img src="IMG_20231226_112347.jpg"></a></div>
+        <div id="img2" class="lightbox"><a href="#"><img src="IMG_20231226_182142.jpg"></a></div>
+        <div id="img3" class="lightbox"><a href="#"><img src="IMG_20231227_090557.jpg"></a></div>
+        <div id="img4" class="lightbox"><a href="#"><img src="IMG_20231227_090618.jpg"></a></div>
+        <div id="img5" class="lightbox"><a href="#"><img src="IMG_20231227_155837.jpg"></a></div>
+        <div id="img6" class="lightbox"><a href="#"><img src="IMG_20231227_155837.jpg"></a></div>
+
+        <!-- New paragraph after images -->
+        <p style="margin-top: 1rem;">
+            These images capture beautiful memories, each telling a story of love, joy, and cherished experiences.
+        </p>
 
         <section>
              <h1>Kwasi Appiah Takyi-(MSc. Applied Mathematics).</h1>
-      <p>Mr. Kwasi Appiah Takyi was born in Huni Valley, a town in the western part of Ghana. He completed his basic education in April 2008 at Nana Amoakwah Model School, situated at Damang in the western part of Ghana. He then continued his high school education at Ghana Secondary Technical School (GSTS) in Takoradi as a General Science student from September 2008 to May 2012.
-        After, he stayed home for a year, preparing himself for the university. During this period, he developed an interest in helping both basic and high school students having challenges in mathematics.</p>
-            <p>
-          Looking at the successes coming from his students, he made a choice to pursue his studies in mathematics at the university.
-        When he was finally admitted, he saw it as a dream come true. From 2013 to 2017, he started his first degree in mathematics at the University of Energy and Natural Resources (UENR) in Bono Region, Ghana.
-        Due to his hard-working and enthusiastic attitude, he was given an appointment to serve as a teaching assistant under the National Service Secretariat for a year at UENR, Department of Mathematics and Statistics.</p> 
-            <p>With the dream that he would feather his education, he ventured into the teaching field for about 5 years after his one-year national service.
-        He got married in 2021. In 2022, he won a scholarship from the Government of the Republic of Serbia to pursue his master’s degree at the University of Belgrade, Faculty of Mathematics.</p> 
-            <p>His desire has always been to use the knowledge gained in previous and current studies to solve some of the problems the world is facing now due to high population growth. He wishes to specialize as a Data Scientist in the future. He intends to return to Ghana after completing his studies.</p>
-        <section>
+             <p>Mr. Kwasi Appiah Takyi was born in Huni Valley, a town in the western part of Ghana. He completed his basic education in April 2008 at Nana Amoakwah Model School, situated at Damang in the western part of Ghana. He then continued his high school education at Ghana Secondary Technical School (GSTS) in Takoradi as a General Science student from September 2008 to May 2012.
+             After, he stayed home for a year, preparing himself for the university. During this period, he developed an interest in helping both basic and high school students having challenges in mathematics.</p>
+             <p>Looking at the successes coming from his students, he made a choice to pursue his studies in mathematics at the university.
+             When he was finally admitted, he saw it as a dream come true. From 2013 to 2017, he started his first degree in mathematics at the University of Energy and Natural Resources (UENR) in Bono Region, Ghana.
+             Due to his hard-working and enthusiastic attitude, he was given an appointment to serve as a teaching assistant under the National Service Secretariat for a year at UENR, Department of Mathematics and Statistics.</p> 
+             <p>With the dream that he would feather his education, he ventured into the teaching field for about 5 years after his one-year national service.
+             He got married in 2021. In 2022, he won a scholarship from the Government of the Republic of Serbia to pursue his master’s degree at the University of Belgrade, Faculty of Mathematics.</p> 
+             <p>His desire has always been to use the knowledge gained in previous and current studies to solve some of the problems the world is facing now due to high population growth. He wishes to specialize as a Data Scientist in the future. He intends to return to Ghana after completing his studies.</p>
+        </section>
 
-            
         <section id="documents" class="documents">
             <h2>Documents</h2>
             <a href="Kwasi_Appiah_Takyi.pdf" target="_blank">Read CV </a>
@@ -119,19 +159,9 @@
             <a href="#" download="Document3.pdf">Download Document </a>
         </section>
     </div>
-    <title>Read Document</title>
-</head>
-<body>
-  <h1>Document Viewer</h1>
-  <script src="Bio.docx"> </script>
+
     <footer>
         <p>&copy; 2025 Your Company. All rights reserved.</p>
     </footer>
 </body>
 </html>
-
-
-
-
-
-
